@@ -1,4 +1,5 @@
-> # Common git commands
+# Common git commands
+
 ---
 ## Git configuration
 - Set your name and email
