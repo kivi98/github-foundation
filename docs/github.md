@@ -68,4 +68,7 @@
 - They are used to document your project, share information, and collaborate with others.
 - They are free and easy to use.
 
+### 12. GitHub Sponsors
+
+
 [Back to top](#GitHub-and-its-features)
