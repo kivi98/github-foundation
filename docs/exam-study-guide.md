@@ -51,6 +51,33 @@
     - **Collaboration Tools**: Provides tools for issue tracking, code reviews, and project management.
     - **Integration**: Integrates with various CI/CD tools, project management software, and more.
 
+| **Feature**                      | **Personal Account**                               | **Organization Account**                        | **Enterprise Account**                          |
+|----------------------------------|----------------------------------------------------|------------------------------------------------|------------------------------------------------|
+| **Description**                  | Individual user accounts                           | Shared accounts for multiple users              | Centralized management for multiple organizations |
+| **User Sign-in**                 | Individual user sign-in                            | Users sign in with personal accounts            | Users sign in with personal accounts             |
+| **Ownership of Resources**       | Can own repositories, packages, projects           | Can own repositories, packages, projects        | Can manage policies and billing for organizations |
+| **Roles and Permissions**        | Managed per repository                             | Tiered roles within the organization            | Enterprise-wide policies and access management    |
+| **Primary Uses**                 | Personal projects, individual contributions        | Team collaboration across multiple projects     | Large-scale enterprise management and security    |
+
+| **GitHub Plans**                 | **GitHub Free**                                    | **GitHub Pro**                                  | **GitHub Team**                                  | **GitHub Enterprise**                           |
+|----------------------------------|----------------------------------------------------|------------------------------------------------|------------------------------------------------|------------------------------------------------|
+| **Target Users**                 | Individuals, small teams                           | Individual developers                           | Organizations, teams                            | Large organizations and enterprises            |
+| **Public/Private Repos**         | Unlimited public and private repositories          | Unlimited public and private repositories       | Unlimited public and private repositories       | Unlimited public and private repositories      |
+| **Collaborators**                | Unlimited                                          | Unlimited                                       | Unlimited                                       | Unlimited                                      |
+| **Support**                      | Community support                                  | Email support                                   | Email support                                   | Enterprise support                             |
+| **GitHub Actions**               | 2,000 minutes/month                                | 3,000 minutes/month                             | 3,000 minutes/month                             | 50,000 minutes/month                           |
+| **Packages Storage**             | 500 MB                                             | 2 GB                                            | 2 GB                                            | 50 GB                                           |
+| **Codespaces Core Hours**        | 120 hours/month                                    | 180 hours/month                                 | Optional, with additional cost                  | 50,000 minutes/month                           |
+| **Codespaces Storage**           | 15 GB/month                                        | 20 GB/month                                     | Optional, with additional cost                  | 50 GB                                           |
+| **Advanced Repository Features** | Basic                                              | Advanced tools and insights                     | Advanced tools and insights                     | Additional security and compliance controls    |
+| **Security and Compliance**      | Two-factor authentication enforcement              | Required pull request reviewers, protected branches, etc. | All features of GitHub Pro plus team-specific features like draft pull requests | Advanced security with SAML single sign-on, SCIM, and more |
+| **Deployment Protection**        | Public repositories only                           | Advanced controls for private repositories      | Advanced controls for private repositories      | Enhanced deployment protection rules            |
+| **Enterprise Management**        | Not available                                      | Not available                                   | Not available                                   | Centralized policy and billing management, Enterprise Managed Users  |
+| **Uptime SLA**                   | Not available                                      | Not available                                   | Not available                                   | 99.9% monthly uptime SLA                       |
+| **Advanced Security**            | Not available                                      | Not available                                   | Not available                                   | Optional to purchase                           |
+| **Hosting Options**              | Cloud                                              | Cloud                                           | Cloud                                           | Cloud and Self-hosted (GitHub Enterprise Server) |
+s
+
 ## 5. GitHub Repository
 
 **Structure and Components**
@@ -88,6 +115,23 @@
         - `git remote add [name] [url]`: Adds a new remote repository.
         - `git fetch [remote]`: Fetches updates from the remote without merging.
         - `git push [remote] [branch]`: Pushes changes to a remote branch.
+
+## 9. Gists
+
+**Definition and Usage**
+- **Gists**: A way to share code snippets, notes, and other text online.
+  - **Features**:
+      - **Public/Private Gists**: Share code publicly or keep it private.
+      - **Embedding**: Embed Gists in websites or blogs.
+      - **Revision History**: Track changes made to Gists over time.
+
+## 10. Wikis
+
+**Collaborative Documentation**
+- **Wikis**: Pages within a repository where you can document your project.
+    - **Usage**:
+        - **Documentation**: Write guides, tutorials, and project documentation.
+        - **Collaboration**: Allow team members to contribute and edit the wiki.
 ---
 
 </details>
@@ -227,16 +271,10 @@
 
 </details>
 
-
-<details>
-<summary>Collaboration Features</summary>
-</details>
-
 ## Collaboration Features
 
 <details>
 <summary>Issues and Pull Requests</summary>
-
 
 ## 1. Issues and Pull Requests
 
@@ -290,15 +328,15 @@
 
 ### GitHub Flow
 
-**Facilitating Collaboration and Code Review**
+**Workflow for Collaboration**
 - **GitHub Flow**: A lightweight, branch-based workflow that supports continuous delivery.
     - **Key Steps**:
         1. **Create a Branch**: Start by creating a new branch for your work.
-        2. **Add Commits**: Make changes and commit them to your branch.
+        2. **Add Commits and Deploy**: Make changes, commit them to your branch, and deploy to verify its stability in the production environment.
         3. **Open a Pull Request**: Propose your changes by opening a pull request.
         4. **Discuss and Review**: Engage with reviewers, address feedback, and make additional commits.
         5. **Merge**: Once approved, merge the pull request into the main branch.
-        6. **Deploy**: Deploy the merged changes to production.
+        6. **Delete Branch**: After merging, delete the feature branch.
 
 ### Continuous Integration/Continuous Deployment (CI/CD)
 
